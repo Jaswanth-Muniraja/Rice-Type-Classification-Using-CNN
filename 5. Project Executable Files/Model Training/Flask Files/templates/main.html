@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Classification Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .project-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .project-title h1 {
+            font-size: 2.5em;
+        }
+
+        .developer-list {
+            list-style-type: disc;
+            padding: 0;
+            margin-left: 10px;
+            font-style: oblique;
+        }
+
+        .developer-list li {
+            margin-bottom: 10px;
+        }
+
+        .usefulness-section,
+        .details-section {
+            margin-top: 30px;
+        }
+
+        .details-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .details-button a {
+            background-color: #4CAF50;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .details-button a:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <style>
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .details-button a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .details-button a:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .footer-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Rice Classification</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#developers">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#usefulness">Usefulness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/details">Predict</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="project-title">
+            <h1>Rice Classification Project</h1>
+            <p>Using Convolutional Neural Networks (CNN)</p>
+        </div>
+        <div class="details-button">
+            <a href="/details">Go to Prediction Page</a>
+        </div>
+
+        <div id="about" class="details-section box">
+            <h2>About the Project</h2>
+            <p>This project is designed to classify five types of rice using a Convolutional Neural Network (CNN). The
+                five types of rice that can be classified are:</p>
+            <ul>
+                <li>Arborio</li>
+                <li>Basmati</li>
+                <li>Ipsala</li>
+                <li>Jasmine</li>
+                <li>Karacadag</li>
+            </ul>
+        </div>
+
+        <div id="developers" class="developers-section box">
+            <h2>Developers</h2>
+            <p>This project was created by a team of four developers:</p>
+            <ul class="developer-list">
+                <li>Tanish Maheshwari</li>
+                <li>Aryan Aggarwal</li>
+                <li>Jaswanth M</li>
+                <li>Kathirgamam Venkatesan</li>
+            </ul>
+            <p>Our Team ID is SWTID1720109344</p>
+        </div>
+
+        <div id="usefulness" class="usefulness-section box">
+            <h2>Project Usefulness</h2>
+            <p>The Rice Classification Project is highly useful in various sectors:</p>
+            <ul>
+                <li><strong>Agriculture:</strong> Helps farmers and agricultural experts in identifying and categorizing
+                    different types of rice, ensuring the right type is grown and harvested.</li>
+                <li><strong>Food Industry:</strong> Assists in quality control and sorting processes in rice milling and
+                    packaging plants, leading to better product differentiation and market segmentation.</li>
+                <li><strong>Research:</strong> Provides a tool for researchers to analyze rice samples, leading to
+                    advancements in agricultural research and development.</li>
+                <li><strong>Consumer Awareness:</strong> Educates consumers about different types of rice, helping them
+                    make informed choices about their food purchases.</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#developers">Developers</a></li>
+                <li><a href="#usefulness">Usefulness</a></li>
+                <li><a href="/details">Predict</a></li>
+            </ul>
+            <p>&copy; 2024 Rice Classification. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
